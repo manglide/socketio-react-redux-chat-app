@@ -1,9 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font: 13px Helvetica, Arial; }
+body { font: 13px; font-family: 'Lato', sans-serif;}
 .headerCanvas { background: #fff; padding: 3px; position: fixed; top: 0; width: 100%; }
 .contentCanvas { background: #fff; padding: 3px; margin-top: 60px; width: 100%;}
-.messageCanvas { background: #fff; padding: 20px; margin-top: 10px; width: 100%; border: thin solid #444;}
-.settingsCanvas { background: #fff; padding: 20px; margin-top: 10px; width: 100%; border: thin solid #444;}
+.messageCanvas { background: #fff; padding: 20px; margin-top: 10px; width: 100%; }
+.settingsCanvas { background: #fff; padding: 20px; margin-top: 10px; width: 100%; }
 .bottomCanvas { background: #fff; padding: 3px; position: fixed; bottom: 0; width: 100%;  }
 form { }
 form input { border: 0; padding: 10px; width: 94%; margin-right: .5%; border: thin solid #444; }
@@ -11,5 +12,116 @@ form div { width: 5%; height: 37px; border: none; padding: 0px; float: left; dis
   position: absolute;}
 form div svg { position:relative; top: calc(50% - 15px); color: #000; float: left;}
 #messages { list-style-type: none; margin: 0; padding: 0; }
-#messages li { padding: 5px 10px; }
-#messages li:nth-child(odd) { background: #eee; }
+#messages li div { padding: 4px; }
+.timeandusername {
+  font-size: 11px;
+  margin-left: 30px;
+  font-style: italic;
+}
+.time {
+  left: 10;
+  margin-left: 25px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.wrapper {
+  width: 90%;
+  margin-top: -10px;
+}
+.comment {
+  color: #fff;
+  background: #444;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 5px;
+  width: auto;
+  border: thin solid #444;
+  display: inline-block;
+}
+.indi {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  border-bottom-color: #444;
+  border-width: 10px;
+  margin-top: -5px;
+  margin-left: -25px;
+  position: absolute;
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+$green: #86BB71;
+$blue: #94C2ED;
+$orange: #E38968;
+$gray: #92959E;
+
+
+.chat {
+
+
+  .chat-history {
+    padding: 30px 30px 20px;
+    border-bottom: 2px solid white;
+    overflow-y: scroll;
+    height: 575px;
+
+    .message-data {
+      margin-bottom: 15px;
+    }
+
+    .message-data-time {
+      color: lighten($gray, 8%);
+      padding-left: 6px;
+    }
+
+    .message {
+      color: white;
+      padding: 18px 20px;
+      line-height: 26px;
+      font-size: 16px;
+      border-radius: 7px;
+      margin-bottom: 30px;
+      width: 90%;
+      position: relative;
+
+      &:after {
+        bottom: 100%;
+        left: 7%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-bottom-color: $green;
+        border-width: 10px;
+        margin-left: -10px;
+      }
+    }
+
+    .my-message {
+      background: $green;
+    }
+
+    .other-message {
+      background: $blue;
+
+      &:after {
+        border-bottom-color: $blue;
+        left: 93%;
+      }
+    }
+
+  }
+
+  .chat-message {
+    padding: 30px;
+  }
+} */
+/* #messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; } */

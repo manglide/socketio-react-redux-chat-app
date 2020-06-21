@@ -1,16 +1,14 @@
 import React from 'react';
 import '../assets/css/App.css';
 
-import ResetButton from './ResetButton';
+
+import SettingsForm from './SettingsForm';
 
 function Settings() {
   return (
     <div>
       <div className="settingsCanvas">
-        <h2>Settings Handler</h2>
-      </div>
-      <div className="bottomCanvas">
-        <ResetButton />
+        <SettingsForm />
       </div>
     </div>
   );

@@ -1,4 +1,9 @@
-export const RECEIVING = 'receiving';
-export const SENDING = 'sending';
+export const RECEIVED = 'receiving';
+export const SEND = 'sending';
 export const RESET = 'reset';
 export const SWITCHTABS = 'switchtabs';
+export const CHANGE_USERNAME = 'change_username';
+export const CHANGE_COLOR = 'change_color';
+export const CHANGE_CLOCK = 'change_clock';
+export const CHANGE_CTRL_ENTER = 'change_ctrl_enter';
+export const CHANGE_LANGUAGE = 'change_language';

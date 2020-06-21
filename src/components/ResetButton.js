@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  btn: {
     width: '99.6%',
     textTransform: "none"
   },
@@ -14,8 +14,8 @@ const useStyles = makeStyles((theme) => ({
 function ResetButton() {
   const classes = useStyles();
   return (
-    <div >
-      <Button variant="contained" color="primary" className={classes.root}>
+    <div>
+      <Button variant="contained" color="primary" className={classes.btn}>
         Reset to Defaults
       </Button>
     </div>
